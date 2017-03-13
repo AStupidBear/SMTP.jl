@@ -1,0 +1,28 @@
+Hello Demon,
+
+Below you will find a link to download JuliaPro v0.5.0.1.
+
+https://s3.amazonaws.com/julia-computing/ustc-yao-lu-deliverables/07Nov2016/JuliaProfessional_v0.5.0.1.exe
+
+The main JuliaPro v0.5.0.1 installer contains the Julia v0.5.0 release, updated versions of all included packages, as well as an embedded copy of the Juno/Atom IDE environment.
+
+Installation Modes
+
+The installer has three main installation modes:
+
+1. "All Users" - This execution mode requires execution with Administrator privileges, allows for installation at any location to which the Administrator has read/write access (including a Shared Drive location), and creates desktop links and Start Menu shortcuts for all users on the current machine.  
+2. "Current User" - This execution mode does not require execution with Administrator privilege, and installs into the current user's "AppData" directory.
+3. "Shared Drive" - This execution mode does not require execution with Administrator privilege, but allows for installation into an arbitrary location in which the current user has read/write access, including a Shared network drive location.  This mode does not attempt to create desktop shortcuts or start menu links for the current user, but copies of those shortcuts are present within the created Julia Professional installation.
+
+If you will be installing locally on your own machine and in your own account, then executing without Administrator privileges and selecting the "Current User" option will be appropriate.
+
+For either the "All Users" or "Shared Drive" options, the installation includes a batch file, Juno.bat, which is also pointed to by the "Juno for JuliaPro 0.5.0.1" shortcut. On first launch of Juno for a given user, this batch script copies an Atom configuration folder into the current user's local directory.  This configuration folder stores all current user specific information for use of Atom and the Juno additions for Julia Professional.
+
+Follow-up
+
+Please let us know if you have any questions or would like to discuss any aspects of the installation and use of JuliaPro v0.5.0.1.
+
+Kind regards,
+
+
+Andy
