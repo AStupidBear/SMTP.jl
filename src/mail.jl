@@ -1,4 +1,4 @@
-function sendmail(from, passwd, tos, smtp_server, subject, text, files=[])
+function sendmail(from, passwd, tos, smtp_server, subject, text, files = [])
   str = """
   \$emailSmtpServer = "$smtp_server"
   \$emailSmtpServerPort = "25"
