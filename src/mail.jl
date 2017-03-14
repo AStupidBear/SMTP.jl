@@ -1,4 +1,4 @@
-function sendmail(from, passwd, tos, smtp_server, subject, text, files = [])
+function sendmail(from, passwd, tos, smtp_server, subject, content, files = [])
   str = """
   \$emailSmtpServer = "$smtp_server"
   \$emailSmtpServerPort = "25"
@@ -9,7 +9,7 @@ function sendmail(from, passwd, tos, smtp_server, subject, text, files = [])
   \$emailMessage.Subject = "$subject"
   \$emailMessage.IsBodyHtml = \$false
   \$emailMessage.Body = @"
-  $text
+  $content
   "@
   """
   for to in tos

@@ -55,10 +55,10 @@ cibo128@163.com----bei57721
 
 accounts = eachmatch(r"^(.+)----(.+)$"m, accounts) |> collect
 
-function spam(tos, subject = "", text = "", files = [])
+function spam(tos, subject = "", content = "", files = [])
   i = rand(1:length(accounts))
   from = accounts[i][1]
   passwd = accounts[i][2]
   smtp_server = "smtp.163.com"
-  sendmail(from, passwd, tos, smtp_server, subject, text, files)
+  sendmail(from, passwd, tos, smtp_server, subject, content, files)
 end
