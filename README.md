@@ -3,8 +3,8 @@
 ## Install
 
 ```julia
-Pkg.clone("https://github.com/AStupidBear/Utils.jl.git")
 Pkg.clone("https://github.com/AStupidBear/SMTP.jl.git")
+Pkg.build("SMTP")
 ```
 
 ## Usage
