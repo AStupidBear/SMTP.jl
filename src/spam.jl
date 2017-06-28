@@ -55,7 +55,7 @@ cibo128@163.com----bei57721
 
 accounts = eachmatch(r"^(.+)----(.+)$"m, accounts) |> collect
 
-function spam(tos, subject = "", content = "", files = [])
+function spam(tos; subject = "", content = "", files = [])
   i = rand(1:length(accounts))
   from = accounts[i][1]
   passwd = accounts[i][2]
